@@ -1,9 +1,9 @@
-.container {
+.cv {
     display: flex;
 }
 
 @media screen and (max-width: 730px) {
-    .container {
+    .cv {
         flex-direction: column;
     }
 }

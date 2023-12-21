@@ -10,7 +10,7 @@ import Interests from '../Components/CV/Interests.jsx';
 
 function CV() {
     return (
-        <div className="container">
+        <div className="cv">
             <div className="left">
                 <div className="element">
                     <Basic />

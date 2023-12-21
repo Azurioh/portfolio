@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 
 function NotFound() {
     return (
-        <div className="container">
+        <div className="notFound">
             <div className="title">
                 <label>Error 404</label>
             </div>

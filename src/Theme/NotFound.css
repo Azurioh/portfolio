@@ -1,4 +1,4 @@
-.container {
+.notFound {
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -8,15 +8,15 @@
     text-align: center;
 }
 
-.title {
+.notFound .title {
     width: 100%;
     font-size: 6rem;
 }
 
-.errorMessage {
+.notFound .errorMessage {
     font-size: 3rem;
 }
 
-.explain {
+.notFound .explain {
     font-size: 2rem;
 }

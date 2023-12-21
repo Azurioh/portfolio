@@ -4,6 +4,10 @@ This is the code of my future website, for the moment is in building but I'm pub
 
 Discord : azurioh
 
+## Requirements :
+- Node.JS
+- npm
+
 ## How to build it :
 
 ```bash

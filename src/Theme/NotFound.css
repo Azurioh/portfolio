@@ -1,0 +1,22 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title {
+    width: 100%;
+    font-size: 6rem;
+}
+
+.errorMessage {
+    font-size: 3rem;
+}
+
+.explain {
+    font-size: 2rem;
+}

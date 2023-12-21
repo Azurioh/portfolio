@@ -30,3 +30,4 @@ npm start
 - ### /projects (not started)
 - ### /contact (not started)
 - ### /CV (finished)
+- ### Page not found (finished)

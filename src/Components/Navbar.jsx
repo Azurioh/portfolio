@@ -3,15 +3,27 @@ import { UilDiscord, UilLinkedin, UilTwitter } from '@iconscout/react-unicons'
 import MenuIcon from '@mui/icons-material/Menu';
 
 function showNavbarMobile() {
-    const navbar = document.querySelectorAll('.mobile .links');
+    const content = document.querySelector('.content');
+    const links = document.querySelectorAll('.mobile .links');
 
-    navbar.forEach(item => {
+    links.forEach(item => {
         const styles = item.style;
+        const contentStyles = content.style;
 
-        if (styles.display === "none" || styles.display === "") {
-            styles.display = "flex";
+        if (styles.visibility === "hidden" || styles.visibility === "") {
+            styles.visibility = "visible";
+            styles.opacity = "1";
+            styles.zindex = "999";
+            contentStyles.visibility = "visible";
+            contentStyles.opacity = "1";
+            contentStyles.zindex = "999";
         } else {
-            styles.display = "none";
+            styles.visibility = "hidden";
+            contentStyles.visibility = "hidden";
+            styles.opacity = "0";
+            contentStyles.opacity = "0";
+            styles.zindex = "-1";
+            contentStyles.zindex = "-1";
         }
     });
 }

@@ -68,14 +68,20 @@ a:hover {
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    border-radius: 5px;
 }
 
 .content .links {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s
 }
 
 .content .links .item {

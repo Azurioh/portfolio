@@ -1,0 +1,95 @@
+a {
+    transition: .3s;
+}
+a:hover {
+    color: red;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding-left: 20px;
+    background-color: rgba(250, 250, 250, 0.5);
+}
+
+.redirection-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.navbar .item {
+    font-weight: 300;
+}
+.navbar .item:not(:last-child) {
+    padding-right: 40px;
+}
+
+.navbar .socials {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.socials .social {
+    padding-right: 25px;
+}
+
+.mobile {
+    display: none;
+    position: relative;
+    width: 100%;
+}
+
+.mobile .icon {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    cursor: pointer;
+    z-index: 999;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.content {
+    display: flex;
+    position: absolute;
+    top: 3rem;
+    left: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.content .links {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .links .item {
+    padding: 10px 30px;
+}
+
+@media screen and (max-width: 580px) {
+    .navbar {
+        display: none;
+    }
+    .socials {
+        display: none;
+    }
+    .mobile {
+        display: flex;
+    }
+}

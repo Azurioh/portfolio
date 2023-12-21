@@ -1,0 +1,378 @@
+.container {
+    display: flex;
+}
+
+@media screen and (max-width: 730px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+.left {
+    background-color: rgb(19, 61, 128);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left .element:not(:first-child), .right .element {
+    padding: 20px;
+    width: 90%;
+}
+
+.basic, .contact, .education, .languages, .profile, .experiences, .skills, .interests {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    align-self: flex-start;
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width: 1400px) {
+    .title {
+        font-size: 2rem;
+    }
+}
+
+/* BASIC INFORMATIONS */
+img {
+    width: 100%;
+}
+
+@media screen and (max-width: 730px) {
+    .image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: black;
+    }
+    img {
+        width: 70%;
+    }
+}
+
+/* CONTACT INFORMATIONS */
+.contact {
+    margin-bottom: 20px;
+}
+
+.infoText, .name, .work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.name h2 {
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+.work h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.separator {
+    width: 80%;
+    height: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 20px;
+}
+
+.informations {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info {
+    display: flex;
+    padding: 5px;
+}
+.info a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+.info a:hover {
+    color: rgb(25, 115, 193);
+}
+.info .icon {
+    padding-right: 10px;
+}
+
+@media screen and (min-width: 1400px) {
+    .info .text {
+        font-size: 1.2rem;
+    }
+}
+
+/* EDUCATION INFORMATIONS */
+
+.formations {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formations .infos {
+    padding: 10px 0;
+}
+
+.formations .infos .date {
+    color: rgb(0, 166, 255)
+}
+
+.formations .infos .formation {
+    font-weight: 700;
+}
+
+@media screen and (min-width: 900px) {
+    .formations .infos .date {
+        font-size: 1.0rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .formations .infos {
+        font-size: 1.2rem;
+    }
+}
+
+/* LANGUAGES INFORMATIONS */
+
+.languages {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.languages .elements {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.languages .language {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.languageName {
+    font-weight: 600;
+}
+
+.level {
+    position: relative;
+    height: 8px;
+}
+
+.actualLevel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgb(0, 166, 255);
+    border-radius: 20px;
+}
+
+.maxLevel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+@media screen and (min-width: 1400px) {
+    .languageName {
+        font-size: 1.1rem;
+    }
+}
+
+/* PROFILE */
+
+.profile .text {
+    font-size: 0.9rem;
+}
+
+@media screen and (min-width: 900px) {
+    .profile .text {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .profile .text {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1480px) {
+    .profile .text {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .profile .text {
+        font-size: 1.4rem;
+    }
+}
+
+/* EXPERIENCES */
+.experience {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 860px) {
+    .experience {
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+.experience:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.leftInfo {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    color: rgb(143, 143, 143);
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.rightInfo {
+    flex: 7;
+}
+
+.position {
+    font-weight: 700;
+    color: rgb(0, 166, 255);
+}
+
+.description {
+    font-size: 0.9rem;
+}
+
+@media screen and (min-width: 900px) {
+    .leftInfo {
+        font-size: 0.9rem;
+    }
+    .position {
+        font-size: 1.1rem;
+    }
+    .description {
+        font-size: 1.0rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .leftInfo {
+        font-size: 1rem;
+    }
+    .position {
+        font-size: 1.4rem;
+    }
+    .description {
+        font-size: 1.3rem;
+    }
+}
+
+/* SKILLS */
+.elements {
+    width: 100%;
+}
+
+.skill {
+    width: 100%;
+    margin-right: 100px
+}
+.skill:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.skill .type {
+    color: rgb(0, 166, 255);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.skill .list {
+    font-size: 0.9rem;
+}
+
+@media screen and (min-width: 900px) {
+    .skill .type {
+        font-size: 1.1rem;
+    }
+    .skill .list {
+        font-size: 1rem;
+    }
+    .skill:not(:last-child) {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .skill .type {
+        font-size: 1.3rem;
+    }
+    .skill .list {
+        font-size: 1.2rem;
+    }
+}
+
+/* INTERESTS */
+.interest {
+    width: 100%;
+    display: flex;
+}
+
+.interest:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.interest .icon {
+    margin-right: 10px;
+    color:rgb(0, 166, 255);
+}
+
+@media screen and (min-width: 900px) {
+    .interest {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .interest {
+        font-size: 1.3rem;
+    }
+}

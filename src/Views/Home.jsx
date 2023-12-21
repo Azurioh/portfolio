@@ -1,11 +1,11 @@
-import '../Styles/Home.css'
+import '../Theme/App.css';
+import Navbar from '../Components/Navbar'
+
 
 function Home() {
-    return (
-        <div className="container">
-            Home page
-        </div>
-    )
+  return (
+    <Navbar />
+  );
 }
 
-export default Home
+export default Home;

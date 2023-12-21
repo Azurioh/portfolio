@@ -1,6 +1,6 @@
 # My portfolio source code
 
-This is the code of my future website, for the moment is in building but I'm publishing it to get feedback. So if you see something I can improve, don't hesitate to contact me !
+This is the code of my future website, for the moment is in building but I'm publishing it to get feedback. So if you see something that I can improve, don't hesitate to contact me !
 
 Discord : azurioh
 
@@ -29,5 +29,5 @@ npm start
 - ### /home (not started)
 - ### /projects (not started)
 - ### /contact (not started)
-- ### /CV (finished)
+- ### /cv (finished)
 - ### Page not found (finished)
